@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/styles.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+</head>
+
+<body class="bg-success">
+
+    <section class="container-md shadow-lg mt-5 bg-white">
+        <div class="row justify-content-center">
+            <div class="col-md-6 mt-5">
+                <h1>Formulario de registro</h1>
+
+                <!-- FORMULARIO -->
+                <form action="#" class="needs-validation" novalidate>
+                    <legend><i class="bi bi-people"></i> Registro usuario</legend>
+
+                    <!-- password -->
+                    <div class="mt-3 form-floating position-relative">
+                        <input class="form-control" type="text" name="username" id="input-password" placeholder=""
+                            required />
+                        <label for="input-password" class="form-label">Escribe tu nombre de usuario</label>
+                        <div id="password-help-block" class="form-text">
+                            Tu nombre no debe contener los siguientes carácteres: /,$,%,*,:,&
+                        </div>
+                        <div class="valid-tooltip">Campo válido</div>
+                        <div class="invalid-tooltip">Debes completar el nombre de usuario</div>
+                    </div>
+
+                    <!-- email -->
+                    <div class="mt-3">
+                        <div class="mt-3 form-floating position-relative">
+                            <input class="form-control" type="email" name="email" id="input-email" placeholder=""
+                                required />
+                            <label for="input-email" class="form-label">Correo electrónico</label>
+                            <div id="email-help-block" class="form-text">
+                                No compartiremos tu dirección de email con nadie más.
+                            </div>
+                            <div class="valid-tooltip">Campo válido</div>
+                            <div class="invalid-tooltip">Debes completar el correo electrónico</div>
+                        </div>
+                    </div>
+
+
+                    <!-- password -->
+                <div class="mt-3">
+                    <div class="mt-3 form-floating position-relative">
+                        <input class="form-control" type="password" name="password" id="input-password" placeholder=""
+                            required />
+                        <label for="input-password" class="form-label">Escribe tu contraseña</label>
+                        <div id="password-help-block" class="form-text">
+                            Tu contraseña debe tener entre 8 y 20 caracteres, contener
+                            letras y números,...
+                        </div>
+                        <div class="valid-tooltip">Campo válido</div>
+                        <div class="invalid-tooltip">Debes completar la contraseña</div>
+                    </div>
+                </div>
+
+                    <!-- recuerdame -->
+                    <div class="form-check form-switch form-check-reverse mt-3">
+                        <label for="check-remember" class="form-label">Recuérdame</label>
+                        <input class="form-check-input" type="checkbox" name="remember" id="check-remember" />
+                    </div>
+
+                    <button class="btn btn-success mb-5" type="submit">Registrarse <i class="bi bi-arrow-up-right-square"></i></button>
+                    <button class="btn btn-success mb-5"><a href="index.html">Volver</a></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap JS -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="build/js/BS_validation.js"></script> 
+
+</body>
+
+</html>
